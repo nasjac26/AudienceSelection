@@ -8,7 +8,27 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Hello, World!</h1>
+    <div>
+        <h1>Input a Vallejo Paint or Army Painter Paint</h1>
+    </div>
+    <div>
+        <form>
+            <h3>Input a paint color exactly as labeled</h3>
+            <input id="name"></input>
+            <h3>Pick triad shade:</h3>
+            <select id="shade">
+              <option value="Highlight">Highlight</option>
+              <option value="Basecolor">Basecolor</option>
+              <option value="Shadow">Shadow</option>
+            </select>
+            <br><br>
+            <button id="submit">Search a triad</button>
+          </form>
+    </div>    
+    <div id="results-container">
+        <h2 id="results-message">Here are your potential paint schemes:</h2>
+
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
