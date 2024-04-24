@@ -1,57 +1,5 @@
 [
     {
-        "Dead White":
-            {
-                "Highlights": 
-                    {
-                        "Highlight": "Dead White",
-                        "Highlight SKU": "72.001",
-                        "Basecolor": "Off-White",
-                        "Basecolor SKU": "72.101",
-                        "Shadow": "Elfic Flesh",
-                        "Shadow SKU": "72.098"
-                    }      
-            },
-        "Off-White":
-            {
-                "Highlights": 
-                    {
-                        "Highlight": "Off-White",
-                        "Highlight SKU": "72.101",
-                        "Basecolor": "Elfic Flesh",
-                        "Basecolor SKU": "72.098",
-                        "Shadow": "Bone White",
-                        "Shadow SKU": "72.034"
-                    }
-            },
-        "Pale Flesh":
-            {
-                "Highlights": 
-                    {
-                        {
-                            "Highlight": "Pale Flesh",
-                            "Highlight SKU": "72.003",
-                            "Basecolor": "Rosy Flesh",
-                            "Basecolor SKU": "72.100",
-                            "Shadow": "Athena Skin",
-                            "Shadow SKU": "72.107"
-                        },
-                        {
-                            "Highlight": "Pale Flesh",
-                            "Highlight SKU": "72.003",
-                            "Basecolor": "Athena Skin",
-                            "Basecolor SKU": "72.107",
-                            "Shadow": "Succubus Skin",
-                            "Shadow SKU": "72.108"
-                        }
-                    }
-            },
-        "Skin Tone":
-           {
-                "Highlight": 
-           }    
-    },
-    {
         "Highlight": "Dead White",
         "Highlight SKU": "72.001",
         "Basecolor": "Off-White",
