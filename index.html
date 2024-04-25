@@ -5,17 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+25&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div>
-        <h1>Input a Vallejo Paint or Army Painter Paint</h1>
+        <h1 class="front-page">Input a Vallejo Paint or Army Painter Paint</h1>
     </div>
     <div>
         <form>
-            <h3>Input a paint color exactly as labeled</h3>
+            <h3 class="front-page">Input a paint color exactly as labeled</h3>
             <input id="name"></input>
-            <h3>Pick triad shade:</h3>
+            <h3 class="front-page">Pick triad shade:</h3>
             <select id="shade">
               <option value="Highlight">Highlight</option>
               <option value="Basecolor">Basecolor</option>
@@ -26,7 +29,7 @@
           </form>
     </div>    
     <div id="results-container">
-        <h2 id="results-message">Here are your potential paint schemes:</h2>
+        <h2 class="front-page" id="results-message">Here are your potential paint schemes:</h2>
 
     </div>
     <script src="script.js"></script>

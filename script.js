@@ -260,29 +260,37 @@ let paintName = document.querySelector("input#name");
 let shadeName = document.querySelector("select#shade");
 let submitButton = document.querySelector("button#submit");
 let resultsContainer = document.querySelector("div#results-container");
+let resultMessage = document.querySelector("h2#results-message")
 
 function shadeTriadFactory(paintName, shade, arr) {
     let paintList = [];
     let count = 0;
     function displayResults() {
-        for (paint of paintList) {
-            count++
-            let basecolorName = document.createElement("p");
-            let highlightName = document.createElement("p");
-            let shadowName = document.createElement("p");
-            let headingElement = document.createElement("h2");
-
-
-            headingElement.textContent = `Option ${count}:`;
-            basecolorName.textContent = `Basecolor: ${paint.Basecolor} ${paint.BasecolorSku}`;
-            highlightName.textContent = `Highlight: ${paint.Highlight} ${paint.HighlightSku}` ;
-            shadowName.textContent = `Shadow: ${paint.Shadow} ${paint.ShadowSku}`;
+        if (paintList != 0) {
+            for (paint of paintList) {
+                count++
+                let basecolorName = document.createElement("p");
+                let highlightName = document.createElement("p");
+                let shadowName = document.createElement("p");
+                let headingElement = document.createElement("h2");
+    
+    
+                headingElement.textContent = `Option ${count}:`;
+                basecolorName.textContent = `Basecolor: ${paint.Basecolor} ${paint.BasecolorSku}`;
+                highlightName.textContent = `Highlight: ${paint.Highlight} ${paint.HighlightSku}` ;
+                shadowName.textContent = `Shadow: ${paint.Shadow} ${paint.ShadowSku}`;
+                
+                resultsContainer.appendChild(headingElement);
+                resultsContainer.appendChild(highlightName);
+                resultsContainer.appendChild(basecolorName);
+                resultsContainer.appendChild(shadowName);
+            }  
+        }
+        else {
+            resultMessage.textContent = "Color not found or does not exist in triad in this position."
+        };
+        
             
-            resultsContainer.appendChild(headingElement);
-            resultsContainer.appendChild(highlightName);
-            resultsContainer.appendChild(basecolorName);
-            resultsContainer.appendChild(shadowName);
-        }       
     }
 
     for (let i = 0; i < arr.length; i++) {
