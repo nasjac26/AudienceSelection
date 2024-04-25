@@ -5,3 +5,5 @@ This is my webapp to make a suggestion of Highlight, Base, Shadow triad. Users i
 Very MVP and a fun tool to help with mainting my miniatures. 
 
 Once you download and unzip you should just need to open the index.html file.
+
+Next thing I am working on is a backend using Node.js stay tuned.
