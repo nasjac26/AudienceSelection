@@ -280,6 +280,7 @@ function shadeTriadFactory(paintName, shade, arr) {
                 basecolorName.textContent = `Basecolor: ${paint.Basecolor} ${paint.BasecolorSku}`;
                 highlightName.textContent = `Highlight: ${paint.Highlight} ${paint.HighlightSku}` ;
                 shadowName.textContent = `Shadow: ${paint.Shadow} ${paint.ShadowSku}`;
+                resultMessage.textContent = "Here are your potential paint schemes:";
                 
     
                 headingElement.classList.add("result");
